@@ -71,7 +71,7 @@ const Navbar = () => {
             <SheetTrigger>
               <Image src={menu} alt="menu" />
             </SheetTrigger>
-            <SheetContent className="black-gradient">
+            <SheetContent className="bg-[#050816] flex items-center justify-center">
               <SheetHeader>
                 <SheetDescription>
                   <ul className="list-none flex flex-col gap-10">
