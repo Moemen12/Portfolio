@@ -1,3 +1,4 @@
+import Education from "@/components/shared/sections/Education";
 import {
   About,
   Contact,
@@ -21,6 +22,7 @@ const page = () => {
       </div>
       <About />
       <Experience />
+      <Education />
       <Tech />
       <Works />
       {/* <Feedbacks /> */}

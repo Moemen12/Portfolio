@@ -1,3 +1,4 @@
+// tailwind.config.js
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -17,6 +18,7 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "special-screen": "830px",
       },
     },
     extend: {
@@ -33,6 +35,7 @@ const config = {
       },
       screens: {
         xs: "450px",
+        "special-screen": "830px", // Ensure it's defined here
       },
       backgroundImage: {
         "hero-pattern": "url('/assets/herobg.png')",

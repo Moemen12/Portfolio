@@ -1,19 +1,31 @@
 "use client";
 import { navLinks } from "@/constants";
 import { styles } from "@/lib/utils";
-import { logo, menu, close } from "@/public/assets";
+import {
+  logo,
+  menu,
+  close,
+  share,
+  linkdln,
+  watsapp,
+  telegram,
+} from "@/public/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -33,23 +45,23 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex special-screen:justify-between items-center max-w-7xl mx-auto">
         <Link
           href={"/"}
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 flex-1"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <Image src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <span className="text-white text-[18px] font-bold cursor-pointer flex">
             Saadeh
             {/* &nbsp;
             <span className="sm:block hidden"> | FullStack Developer</span> */}
-          </p>
+          </span>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden special-screen:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -67,7 +79,59 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <Popover>
+          <PopoverTrigger className="mr-5 special-screen:mr-0 special-screen:ml-5">
+            <Image src={share} alt="share" />
+          </PopoverTrigger>
+          <PopoverContent
+            asChild
+            className="p-0 w-60 h-52 bg-[#1F2937] border-none rounded-xl"
+          >
+            <div className="flex flex-col">
+              <p className="bg-[#374151] text-sm rounded-t-xl grid place-items-center py-3 font-semibold text-white">
+                Share!
+              </p>
+              <div className="p-8 flex items-center gap-1 flex-wrap">
+                <Link
+                  className="border-white hover:border rounded-xl border-solid"
+                  target="_blank"
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=https://saadeh-portfolio.onrender.com/`}
+                >
+                  <Image
+                    src={linkdln}
+                    alt="linkdln share"
+                    className="w-12 h-12 cursor-pointer"
+                  />
+                </Link>
+
+                <Link
+                  className="border-white hover:border rounded-xl border-solid"
+                  href={`https://api.whatsapp.com/send?text=https://saadeh-portfolio.onrender.com/`}
+                  target="_blank"
+                >
+                  <Image
+                    src={watsapp}
+                    alt="whatsapp share"
+                    className="w-12 h-12 cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  className="border-white hover:border rounded-xl border-solid"
+                  href={`https://telegram.me/share/url?url=https://saadeh-portfolio.onrender.com/`}
+                  target="_blank"
+                >
+                  <Image
+                    src={telegram}
+                    alt="telegram share"
+                    className="w-12 h-12 cursor-pointer"
+                  />
+                </Link>
+              </div>
+            </div>
+          </PopoverContent>
+        </Popover>
+
+        <div className="flex special-screen:hidden items-center">
           <Sheet>
             <SheetTrigger>
               <Image src={menu} alt="menu" />
@@ -75,7 +139,7 @@ const Navbar = () => {
             <SheetContent className="bg-[#050816] flex items-center justify-center">
               <SheetTitle className="hidden">SideBar Menu</SheetTitle>
               <SheetHeader>
-                <SheetDescription>
+                <SheetDescription asChild>
                   <ul className="list-none flex flex-col gap-10">
                     {navLinks.map((link) => (
                       <li

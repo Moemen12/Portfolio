@@ -63,7 +63,7 @@ const Experience: React.FC = (): React.ReactNode => {
         <h2 className={`${styles.sectionHeadText}`}>Work Exprience.</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-20 flex flex-col" style={{ overflowWrap: "anywhere" }}>
         <VerticalTimeline>
           {experiences.map(
             (experience: ExperienceCardParams, index: number) => (

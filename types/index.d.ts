@@ -19,7 +19,7 @@ declare type ProjectsParams = {
   description: string;
   tags: {
     name: string;
-    color: string;
+    backgroundColor: string;
   }[];
   image: StaticImageData;
   source_code_link: string;

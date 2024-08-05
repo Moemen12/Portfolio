@@ -43,12 +43,16 @@ export const navLinks = [
     title: "Experience",
   },
   {
-    id: "Projects",
-    title: "Projects",
+    id: "education",
+    title: "Education",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "Projects",
+    title: "Projects",
   },
 ];
 
@@ -221,27 +225,27 @@ const projects: ProjectsParams[] = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        backgroundColor: "bg-[#326DA5]",
       },
       {
         name: "laravel",
-        color: "text-[#EB4432]",
+        backgroundColor: "bg-[#EB4432]",
       },
       {
         name: "tailwind",
-        color: "text-blue-300",
+        backgroundColor: "bg-[#3ebfbb]",
       },
       {
         name: "sql",
-        color: "text-white",
+        backgroundColor: "bg-[#4F46E5]",
       },
       {
         name: "Javascript",
-        color: "text-yellow-400",
+        backgroundColor: "bg-[#DDB318]",
       },
       {
         name: "Algolia",
-        color: "text-blue-700",
+        backgroundColor: "bg-[#0000FF]",
       },
     ],
     image: wanderwise,
@@ -255,31 +259,31 @@ const projects: ProjectsParams[] = [
     tags: [
       {
         name: "nextjs",
-        color: "text-black font-bold",
+        backgroundColor: "bg-black",
       },
       {
         name: "Clerk",
-        color: "text-white",
+        backgroundColor: "bg-[#505050]",
       },
       {
         name: "Mongodb",
-        color: "green-text-gradient",
+        backgroundColor: "bg-[#258E64]",
       },
       {
         name: "tailwind",
-        color: "text-blue-300",
+        backgroundColor: "bg-[#3ebfbb]",
       },
       {
         name: "Stripe",
-        color: "text-violet-700",
+        backgroundColor: "bg-[#9D9AF1]",
       },
       {
         name: "Typescript",
-        color: "text-blue-700",
+        backgroundColor: "bg-[#3178C6]",
       },
       {
         name: "Cloundinary",
-        color: "text-cyan-500 ",
+        backgroundColor: "bg-[#0000FF]",
       },
     ],
     image: imaginify,
@@ -293,19 +297,19 @@ const projects: ProjectsParams[] = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        backgroundColor: "bg-[#326DA5]",
       },
       {
         name: "redux",
-        color: "text-violet-700",
+        backgroundColor: "bg-[#7149B9]",
       },
       {
         name: "tailwind",
-        color: "text-blue-300",
+        backgroundColor: "bg-[#3ebfbb]",
       },
       {
         name: "Javascript",
-        color: "text-yellow-400",
+        backgroundColor: "bg-[#DDB318]",
       },
     ],
     image: comfy,
@@ -319,27 +323,27 @@ const projects: ProjectsParams[] = [
     tags: [
       {
         name: "nextjs",
-        color: "text-black font-bold",
+        backgroundColor: "bg-black",
       },
       {
         name: "Clerk",
-        color: "text-white",
+        backgroundColor: "bg-[#505050]",
       },
       {
         name: "Mongodb",
-        color: "green-text-gradient",
+        backgroundColor: "bg-[#258E64]",
       },
       {
         name: "tailwind",
-        color: "text-blue-300",
+        backgroundColor: "bg-[#3ebfbb]",
       },
       {
         name: "Stripe",
-        color: "text-violet-700",
+        backgroundColor: "bg-[#9D9AF1]",
       },
       {
         name: "Typescript",
-        color: "text-blue-700",
+        backgroundColor: "bg-[#3178C6]",
       },
     ],
     image: evently,

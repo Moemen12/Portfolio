@@ -31,6 +31,12 @@ import next from "./tech/next.png";
 import mongo from "./tech/mongo.png";
 import php from "./tech/php.png";
 import docker from "./tech/docker.png";
+import cv from "./social_media/cv.png";
+import git_square from "./social_media/github_square.png";
+import linkdln from "./social_media/linkedin.png";
+import share from "./share.svg";
+import watsapp from "./social_media/whatsapp.png";
+import telegram from "./social_media/telegram.png";
 export {
   logo,
   backend,
@@ -62,4 +68,10 @@ export {
   mongo,
   php,
   docker,
+  cv,
+  git_square,
+  linkdln,
+  share,
+  watsapp,
+  telegram,
 };

@@ -43,11 +43,7 @@ const Contact = () => {
 
   function onSubmit(values: z.infer<typeof EmailFormSchema>) {
     setLoading(true);
-    toast({
-      className: "bg-tertiary",
-      title: "Requested Successfully",
-      description: "Thank you. I will get back to you as soon as possible.",
-    });
+
     emailjs
       .send(
         envVar.ServiceId!,
@@ -64,7 +60,7 @@ const Contact = () => {
       .then(() => {
         setLoading(false);
         toast({
-          className: "",
+          className: "bg-tertiary",
           title: "Requested Successfully",
           description: "Thank you. I will get back to you as soon as possible.",
         });

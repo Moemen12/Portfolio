@@ -44,6 +44,11 @@ const Tech: React.FC = (): React.ReactNode => {
 
   return (
     <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText}`}>What I have learnt so far</p>
+        <h2 className={`${styles.sectionHeadText}`}>Skills 💻.</h2>
+      </motion.div>
+
       {isWideScreen ? (
         <div className="flex flex-wrap justify-center gap-10">
           {technologies.map((technology: TechnologiesParams) => (
@@ -54,13 +59,6 @@ const Tech: React.FC = (): React.ReactNode => {
         </div>
       ) : (
         <>
-          <motion.div variants={textVariant()}>
-            <p className={`${styles.sectionSubText}`}>
-              What I have learnt so far
-            </p>
-            <h2 className={`${styles.sectionHeadText}`}>Skills 💻.</h2>
-          </motion.div>
-
           <div className="grid grid-cols-2 xs:grid-cols-3 mt-20 gap-3">
             {technologies.map((technology: TechnologiesParams) => (
               <TooltipProvider key={technology.name}>
@@ -94,4 +92,4 @@ const Tech: React.FC = (): React.ReactNode => {
   );
 };
 
-export default SectionWrapper(Tech, "Tech");
+export default SectionWrapper(Tech, "skills");
