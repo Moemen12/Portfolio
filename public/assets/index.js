@@ -7,20 +7,6 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
 import codendot from "./company/codendot.svg";
 import marka from "./company/marka_press.jpg";
 import gcb from "./company/gcb_gulf_crypto_bank.svg";
@@ -30,7 +16,21 @@ import wanderwise from "./projects/wanderwise.png";
 import comfy from "./projects/comfy.png";
 import evently from "./projects/evently.png";
 import imaginify from "./projects/imaginify.png";
+import typescript from "./tech/typescript.png";
+import react from "./tech/react.png";
+import js from "./tech/javascript.png";
+import redux from "./tech/redux.svg";
 
+import tailwind from "./tech/tailwind.png";
+import bootstrap from "./tech/bootstrap-framework.png";
+import sass from "./tech/sass.png";
+import laravel from "./tech/laravel-framework.png";
+import nestjs from "./tech/nestjs.png";
+import sql from "./tech/sql.png";
+import next from "./tech/next.png";
+import mongo from "./tech/mongo.png";
+import php from "./tech/php.png";
+import docker from "./tech/docker.png";
 export {
   logo,
   backend,
@@ -40,19 +40,6 @@ export {
   github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
   codendot,
   marka,
   gcb,
@@ -61,4 +48,18 @@ export {
   comfy,
   evently,
   imaginify,
+  typescript,
+  react,
+  js,
+  redux,
+  tailwind,
+  bootstrap,
+  sass,
+  laravel,
+  nestjs,
+  sql,
+  next,
+  mongo,
+  php,
+  docker,
 };

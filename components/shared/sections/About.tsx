@@ -52,7 +52,7 @@ const About = () => {
         collaborating with diverse teams to deliver innovative solutions and
         meeting project deadlines.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service) => (
           <ServiceCard key={service.title} index={service.title} {...service} />
         ))}

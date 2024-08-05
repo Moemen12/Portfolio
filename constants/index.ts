@@ -9,18 +9,7 @@ import {
   backend,
   creator,
   web,
-  javascript,
   typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
   codendot,
   gcb,
   weblayer,
@@ -29,7 +18,19 @@ import {
   comfy,
   evently,
   imaginify,
-  threejs,
+  react,
+  js,
+  redux,
+  tailwind,
+  bootstrap,
+  sass,
+  laravel,
+  nestjs,
+  sql,
+  next,
+  mongo,
+  php,
+  docker,
 } from "../public/assets";
 
 export const navLinks = [
@@ -72,55 +73,60 @@ const services = [
 
 const technologies: TechnologiesParams[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Next Js",
+    icon: next,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "React Js",
+    icon: react,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
+    name: "Typescript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Mongo DB",
+    icon: mongo,
   },
   {
-    name: "Redux Toolkit",
+    name: "Javascript",
+    icon: js,
+  },
+  {
+    name: "Redux",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "PHP",
+    icon: php,
+  },
+  {
+    name: "Tailwind Css",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Sass",
+    icon: sass,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Laravel",
+    icon: laravel,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Nest Js",
+    icon: nestjs,
+  },
+
+  {
+    name: "SQL",
+    icon: sql,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];

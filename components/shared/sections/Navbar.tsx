@@ -11,6 +11,7 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -72,6 +73,7 @@ const Navbar = () => {
               <Image src={menu} alt="menu" />
             </SheetTrigger>
             <SheetContent className="bg-[#050816] flex items-center justify-center">
+              <SheetTitle className="hidden">SideBar Menu</SheetTitle>
               <SheetHeader>
                 <SheetDescription>
                   <ul className="list-none flex flex-col gap-10">
