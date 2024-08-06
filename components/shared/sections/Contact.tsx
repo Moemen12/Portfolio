@@ -161,7 +161,7 @@ const Contact = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-white font-medium mb-4">
-                    Your Name
+                    Your Message
                   </FormLabel>
                   <FormControl>
                     <Textarea
