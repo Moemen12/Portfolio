@@ -18,7 +18,7 @@ const Education: React.FC = (): React.JSX.Element => {
           <div className="w-1 h-20 violet-gradient"></div>
         </div>
 
-        <div className="flex flex-col text-lg">
+        <div className="flex flex-col text-base sm:text-lg">
           <p className="text-secondary">Nov 2021 - Jan 2024</p>
           <h3 className="font-semibold">
             Computer Programming -{" "}
