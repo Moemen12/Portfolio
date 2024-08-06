@@ -8,11 +8,14 @@ import type { ToastActionElement, ToastProps } from "@/components/ui/toast";
 const TOAST_LIMIT = 1;
 const TOAST_REMOVE_DELAY = 1000000;
 
-type ToasterToast = ToastProps & {
+type ToasterToast = Omit<
+  ToastProps,
+  "id" | "title" | "description" | "action"
+> & {
   id: string;
-  title?: React.JSX.Element;
-  description?: React.JSX.Element;
-  action?: ToastActionElement;
+  title?: React.ReactNode; // Allow title to be a React node
+  description?: React.ReactNode; // Allow description to be a React node
+  action?: ToastActionElement; // Keep action as is
 };
 
 const actionTypes = {
