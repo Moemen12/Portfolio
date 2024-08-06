@@ -44,13 +44,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Experienced Full-Stack Developer with a strong background in React.js,
-        MongoDB, Nest.js, and Laravel. Proficient in building scalable
-        applications and RESTful APIs, ensuring optimal performance and
-        scalability. Skilled in implementing responsive design principles and
-        maintaining code integrity through rigorous testing practices. Adept at
-        collaborating with diverse teams to deliver innovative solutions and
-        meeting project deadlines.
+        Experienced Full-Stack Developer specializing in React.js, MongoDB,
+        Nest.js, and Laravel. Skilled in building scalable applications and
+        RESTful APIs with a focus on performance and scalability. Proficient in
+        responsive design and rigorous testing practices. Collaborative team
+        player committed to delivering innovative solutions and meeting project
+        deadlines.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service) => (

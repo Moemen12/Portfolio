@@ -18,7 +18,7 @@ const ExperienceCard = ({
 }: {
   experience: ExperienceCardParams;
   id: number;
-}): React.ReactNode => (
+}): React.JSX.Element => (
   <VerticalTimelineElement
     visible={true}
     key={id}
@@ -55,7 +55,7 @@ const ExperienceCard = ({
   </VerticalTimelineElement>
 );
 
-const Experience: React.FC = (): React.ReactNode => {
+const Experience: React.FC = (): React.JSX.Element => {
   return (
     <>
       <motion.div variants={textVariant()}>

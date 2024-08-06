@@ -1,9 +1,10 @@
 "use client";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { styles } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import { ComputersCanvas } from "../canvas";
+// import { ComputersCanvas } from "../canvas";
 import Link from "next/link";
+import { ReactTyped } from "react-typed";
 import Image from "next/image";
 import { cv, git_square, linkdln } from "@/public/assets";
 
@@ -42,7 +43,19 @@ const Hero = () => {
 
         <div className="flex flex-col">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I&apos;m <span className="text-[#915eff]">Moemen Saadeh</span>
+            Hi, I&apos;m{" "}
+            <ReactTyped
+              strings={[
+                "Moemen Saadeh",
+                "a Full-Stack Developer",
+                "an Arduino Enthusiast",
+                "a Security Explorer",
+              ]}
+              typeSpeed={80}
+              backSpeed={60}
+              loop
+              className="text-[#915eff]"
+            />
           </h1>
           <div>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>

@@ -10,7 +10,7 @@ import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import CanvasLoader from "../sections/Loader";
 
-const Ball = ({ imgUrl }: { imgUrl: string }): React.ReactNode => {
+const Ball = ({ imgUrl }: { imgUrl: string }): React.JSX.Element => {
   const [decal] = useTexture([imgUrl]);
 
   return (
@@ -35,7 +35,7 @@ const Ball = ({ imgUrl }: { imgUrl: string }): React.ReactNode => {
   );
 };
 
-const BallCanvas = ({ icon }: { icon: string }): React.ReactNode => {
+const BallCanvas = ({ icon }: { icon: string }): React.JSX.Element => {
   return (
     <Canvas
       className="top-20"

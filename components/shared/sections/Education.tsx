@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles, textVariant } from "@/lib/utils";
 import Link from "next/link";
 
-const Education: React.FC = (): React.ReactNode => {
+const Education: React.FC = (): React.JSX.Element => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -18,7 +18,7 @@ const Education: React.FC = (): React.ReactNode => {
           <div className="w-1 h-20 violet-gradient"></div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col text-lg">
           <p className="text-secondary">Nov 2021 - Jan 2024</p>
           <h3 className="font-semibold">
             Computer Programming -{" "}
