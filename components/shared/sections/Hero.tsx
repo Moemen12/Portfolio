@@ -70,15 +70,30 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image src={cv} alt="cv" className="w-12 h-12 cursor-pointer" />
+                <Image
+                  src={cv}
+                  alt="cv"
+                  className="w-12 h-12 cursor-pointer"
+                  loading="lazy"
+                />
               </Link>
               <Link href={"https://github.com/Moemen12/"}>
-                <Image src={git_square} alt="github" className="w-16 h-16" />
+                <Image
+                  src={git_square}
+                  alt="github"
+                  className="w-16 h-16"
+                  loading="lazy"
+                />
               </Link>
               <Link
                 href={"https://www.linkedin.com/in/moemen-saadeh-707436260"}
               >
-                <Image src={linkdln} alt="Linkdln" className="w-14 h-14" />
+                <Image
+                  src={linkdln}
+                  alt="Linkdln"
+                  className="w-14 h-14"
+                  loading="lazy"
+                />
               </Link>
             </div>
           </div>

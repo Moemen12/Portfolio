@@ -28,7 +28,12 @@ const ProjectCard = ({
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
     >
       <div className="relative w-full h-[230px]">
-        <Image src={image} alt={name} className="w-full h-full rounded-2xl" />
+        <Image
+          src={image}
+          alt={name}
+          className="w-full h-full rounded-2xl"
+          loading="lazy"
+        />
         <div className="absolute inset-0 flex flex-col items-end">
           <div className="flex m-1 card-img_hover">
             <div
@@ -36,6 +41,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <Image
+                loading="lazy"
                 src={github}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
@@ -86,7 +92,7 @@ const Works: React.FC = (): React.JSX.Element => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          // variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcase my skills and experience through

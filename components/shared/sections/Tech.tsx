@@ -73,6 +73,7 @@ const Tech: React.FC = (): React.JSX.Element => {
                   >
                     <Suspense fallback={<Spinner />}>
                       <Image
+                        loading="lazy"
                         src={technology.icon}
                         alt={technology.name}
                         className="w-4/5 h-4/5 object-contain"

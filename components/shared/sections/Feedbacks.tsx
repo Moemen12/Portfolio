@@ -33,6 +33,7 @@ const FeedbackCard = ({
         </div>
 
         <Image
+          loading="lazy"
           src={image}
           width={40}
           height={40}

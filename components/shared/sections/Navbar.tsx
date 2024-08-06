@@ -81,7 +81,7 @@ const Navbar = () => {
 
         <Popover>
           <PopoverTrigger className="mr-5 special-screen:mr-0 special-screen:ml-5">
-            <Image src={share} alt="share" />
+            <Image src={share} alt="share" loading="lazy" />
           </PopoverTrigger>
           <PopoverContent
             asChild
@@ -98,6 +98,7 @@ const Navbar = () => {
                   href={`https://www.linkedin.com/shareArticle?mini=true&url=https://saadeh-portfolio.onrender.com/`}
                 >
                   <Image
+                    loading="lazy"
                     src={linkdln}
                     alt="linkdln share"
                     className="w-12 h-12 cursor-pointer"
@@ -110,6 +111,7 @@ const Navbar = () => {
                   target="_blank"
                 >
                   <Image
+                    loading="lazy"
                     src={watsapp}
                     alt="whatsapp share"
                     className="w-12 h-12 cursor-pointer"
@@ -121,6 +123,7 @@ const Navbar = () => {
                   target="_blank"
                 >
                   <Image
+                    loading="lazy"
                     src={telegram}
                     alt="telegram share"
                     className="w-12 h-12 cursor-pointer"
@@ -134,7 +137,7 @@ const Navbar = () => {
         <div className="flex special-screen:hidden items-center">
           <Sheet>
             <SheetTrigger>
-              <Image src={menu} alt="menu" />
+              <Image src={menu} alt="menu" loading="lazy" />
             </SheetTrigger>
             <SheetContent className="bg-[#050816] flex items-center justify-center">
               <SheetTitle className="hidden">SideBar Menu</SheetTitle>
