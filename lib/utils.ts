@@ -34,7 +34,7 @@ export const textVariant = (delay?: number): Variants => {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 1.25,
+        duration: 0.8,
         delay: delay,
       },
     },
