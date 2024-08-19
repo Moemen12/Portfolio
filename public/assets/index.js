@@ -37,6 +37,7 @@ import linkdln from "./social_media/linkedin.png";
 import share from "./share.svg";
 import watsapp from "./social_media/whatsapp.png";
 import telegram from "./social_media/telegram.png";
+import halo from "./projects/halo-app.png";
 export {
   logo,
   backend,
@@ -74,4 +75,5 @@ export {
   share,
   watsapp,
   telegram,
+  halo,
 };

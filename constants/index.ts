@@ -31,6 +31,7 @@ import {
   mongo,
   php,
   docker,
+  halo,
 } from "../public/assets";
 
 export const navLinks = [
@@ -219,6 +220,36 @@ const testimonials: TestimonialParams[] = [
 
 const projects: ProjectsParams[] = [
   {
+    name: "Halo Chat",
+    description:
+      "A chat app supports both individual and group chats, allowing users to send messages, update group information, and manage group members and photos. It includes features like message history, profile images, and user authentication",
+    tags: [
+      {
+        name: "Typescript",
+        backgroundColor: "bg-[#3178C6]",
+      },
+      {
+        name: "nextjs",
+        backgroundColor: "bg-black",
+      },
+      {
+        name: "Pusher",
+        backgroundColor: "bg-[#7D6CAD]",
+      },
+      {
+        name: "Mongodb",
+        backgroundColor: "bg-[#258E64]",
+      },
+      {
+        name: "tailwind",
+        backgroundColor: "bg-[#3ebfbb]",
+      },
+    ],
+    image: halo,
+    source_code_link: "https://github.com/Moemen12/Chat-app",
+    live: "https://saadeh-chat.vercel.app",
+  },
+  {
     name: "Place Discovery",
     description:
       "Uncover exciting destinations with in-depth information, user reviews, and ratings. Effortlessly search for, bookmark, and share your favorite spots, add new locations you've visited.Enjoy a user-friendly interface that makes exploring and sharing your adventures a breeze.",
@@ -250,7 +281,7 @@ const projects: ProjectsParams[] = [
     ],
     image: wanderwise,
     source_code_link: "https://github.com/Moemen12/Place_discovery_app",
-    live: "http://frontend.wanderwise.wanderwise.space ",
+    live: "http://frontend.wanderwise.wanderwise.space",
   },
   {
     name: "Imaginify",
