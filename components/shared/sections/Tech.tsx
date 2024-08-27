@@ -64,10 +64,8 @@ const Tech: React.FC = (): React.JSX.Element => {
               <Tooltip>
                 <TooltipTrigger>
                   <div
-                    className={`bg-[#1D1836] grid place-items-center rounded-xl h-full transition-transform duration-300 ${
-                      clickedTech === technology.name
-                        ? "scale-105 bg-violet-950"
-                        : ""
+                    className={`bg-[#1D1836] grid place-items-center hover:bg-violet-800 rounded-xl h-full transition-transform duration-300 hover:scale-105 ${
+                      clickedTech === technology.name ? "bg-violet-950" : ""
                     }`}
                     onClick={() => handleClick(technology.name)}
                   >
