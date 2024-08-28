@@ -12,6 +12,7 @@ import {
 } from "@/public/assets";
 import Image from "next/image";
 import Link from "next/link";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { useEffect, useState } from "react";
 import {
   Sheet,
@@ -57,25 +58,31 @@ const Navbar = () => {
           <Image src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <span className="text-white text-[18px] font-bold cursor-pointer flex">
             Saadeh
-            {/* &nbsp;
-            <span className="sm:block hidden"> | FullStack Developer</span> */}
           </span>
         </Link>
         <ul className="list-none hidden special-screen:flex flex-row gap-10">
           {navLinks.map((link) => (
-            <li
+            <RoughNotation
               key={link.id}
-              className={`${
-                active === `#${link.id}` ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              type="box"
+              show={link.title === "Packages" ? true : false}
+              color="yellow"
+              strokeWidth={1}
+              animationDuration={800}
             >
-              <Link
-                href={`#${link.id}`}
-                onClick={() => setActive(`#${link.id}`)}
+              <li
+                className={`${
+                  active === `#${link.id}` ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
-                {link.title}
-              </Link>
-            </li>
+                <Link
+                  href={`#${link.id}`}
+                  onClick={() => setActive(`#${link.id}`)}
+                >
+                  {link.title}
+                </Link>
+              </li>
+            </RoughNotation>
           ))}
         </ul>
 
@@ -145,21 +152,30 @@ const Navbar = () => {
                 <SheetDescription asChild>
                   <ul className="list-none flex flex-col gap-10">
                     {navLinks.map((link) => (
-                      <li
+                      <RoughNotation
                         key={link.id}
-                        className={`${
-                          active === `#${link.id}`
-                            ? "text-white"
-                            : "text-secondary"
-                        } hover:text-white text-[18px] font-medium cursor-pointer`}
+                        type="box"
+                        show={link.title === "Packages" ? true : false}
+                        color="yellow"
+                        strokeWidth={1}
+                        animationDuration={800}
                       >
-                        <Link
-                          href={`#${link.id}`}
-                          onClick={() => setActive(`#${link.id}`)}
+                        <li
+                          key={link.id}
+                          className={`${
+                            active === `#${link.id}`
+                              ? "text-white"
+                              : "text-secondary"
+                          } hover:text-white text-[18px] font-medium cursor-pointer`}
                         >
-                          {link.title}
-                        </Link>
-                      </li>
+                          <Link
+                            href={`#${link.id}`}
+                            onClick={() => setActive(`#${link.id}`)}
+                          >
+                            {link.title}
+                          </Link>
+                        </li>
+                      </RoughNotation>
                     ))}
                   </ul>
                 </SheetDescription>

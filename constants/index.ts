@@ -1,5 +1,6 @@
 import {
   ExperienceCardParams,
+  PackagesParams,
   ProjectsParams,
   TechnologiesParams,
   TestimonialParams,
@@ -32,6 +33,8 @@ import {
   php,
   docker,
   halo,
+  jest,
+  npm,
 } from "../public/assets";
 
 export const navLinks = [
@@ -54,6 +57,10 @@ export const navLinks = [
   {
     id: "Projects",
     title: "Projects",
+  },
+  {
+    id: "packages",
+    title: "Packages",
   },
 ];
 
@@ -104,6 +111,10 @@ const technologies: TechnologiesParams[] = [
   {
     name: "PHP",
     icon: php,
+  },
+  {
+    name: "Jest",
+    icon: jest,
   },
   {
     name: "Tailwind Css",
@@ -319,7 +330,7 @@ const projects: ProjectsParams[] = [
     ],
     image: imaginify,
     source_code_link: "https://github.com/Moemen12/Imaginify",
-    live: "https://imaginify-iias.onrender.com",
+    live: "https://imaginify-eight-sandy.vercel.app",
   },
   {
     name: "Comfy Store",
@@ -383,4 +394,21 @@ const projects: ProjectsParams[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const packages: PackagesParams[] = [
+  {
+    name: "valid-utils",
+    image: npm,
+    version: "1.0.0",
+    github_url: "https://github.com/Moemen12/valid-utils",
+    npm_url: "https://www.npmjs.com/package/valid-utils",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  packages,
+};

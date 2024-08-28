@@ -20,7 +20,7 @@ import typescript from "./tech/typescript.png";
 import react from "./tech/react.png";
 import js from "./tech/javascript.png";
 import redux from "./tech/redux.svg";
-
+import jest from "./tech/jest.svg";
 import tailwind from "./tech/tailwind.png";
 import bootstrap from "./tech/bootstrap-framework.png";
 import sass from "./tech/sass.png";
@@ -38,6 +38,7 @@ import share from "./share.svg";
 import watsapp from "./social_media/whatsapp.png";
 import telegram from "./social_media/telegram.png";
 import halo from "./projects/halo-app.png";
+import npm from "./packages/npm.svg";
 export {
   logo,
   backend,
@@ -45,6 +46,7 @@ export {
   mobile,
   web,
   github,
+  jest,
   menu,
   close,
   codendot,
@@ -76,4 +78,5 @@ export {
   watsapp,
   telegram,
   halo,
+  npm,
 };

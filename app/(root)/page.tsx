@@ -9,6 +9,7 @@ import {
   Tech,
   Works,
 } from "@/components/shared/sections/index";
+import Package from "@/components/shared/sections/Package";
 import StarsCanvas from "@/components/shared/sections/StarsCanvas";
 
 import React from "react";
@@ -25,6 +26,7 @@ const page = () => {
       <Education />
       <Tech />
       <Works />
+      <Package />
       {/* <Feedbacks /> */}
       <div className="relative z-0">
         <Contact />

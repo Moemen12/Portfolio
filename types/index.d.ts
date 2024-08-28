@@ -33,3 +33,11 @@ declare type TestimonialParams = {
   company: string;
   image: string;
 };
+
+declare type PackagesParams = {
+  name: string;
+  image: StaticImageData;
+  version: string;
+  github_url: string;
+  npm_url: string;
+};
