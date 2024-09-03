@@ -398,9 +398,16 @@ const packages: PackagesParams[] = [
   {
     name: "valid-utils",
     image: npm,
-    version: "1.0.0",
+    version: "1.0.1",
     github_url: "https://github.com/Moemen12/valid-utils",
     npm_url: "https://www.npmjs.com/package/valid-utils",
+  },
+  {
+    name: "speech-command-engine",
+    image: npm,
+    version: "1.0.5",
+    github_url: "https://github.com/Moemen12/speech-command-engine",
+    npm_url: "https://www.npmjs.com/package/speech-command-engine",
   },
 ];
 
