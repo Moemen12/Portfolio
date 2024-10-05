@@ -66,7 +66,7 @@ const Hero = () => {
             </p>
             <div className="flex items-center gap-1 mt-4">
               <Link
-                href={"/assets/moemen_cv.docx"}
+                href={"/assets/moemen_cv.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
