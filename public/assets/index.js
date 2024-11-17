@@ -39,6 +39,7 @@ import watsapp from "./social_media/whatsapp.png";
 import telegram from "./social_media/telegram.png";
 import halo from "./projects/halo-app.png";
 import npm from "./packages/npm.svg";
+import youapp from "./projects/youapp.png";
 export {
   logo,
   backend,
@@ -79,4 +80,5 @@ export {
   telegram,
   halo,
   npm,
+  youapp,
 };

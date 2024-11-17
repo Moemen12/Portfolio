@@ -35,6 +35,7 @@ import {
   halo,
   jest,
   npm,
+  youapp,
 } from "../public/assets";
 
 export const navLinks = [
@@ -231,10 +232,18 @@ const testimonials: TestimonialParams[] = [
 
 const projects: ProjectsParams[] = [
   {
-    name: "Halo Chat",
+    name: "You App",
     description:
-      "A chat app supports both individual and group chats, allowing users to send messages, update group information, and manage group members and photos. It includes features like message history, profile images, and user authentication",
+      "YOUAPP is a platform that connects users in a dynamic and interactive way. It enables seamless communication through real-time chat, personalized user profiles, and instant notifications, creating an engaging and collaborative environment.",
     tags: [
+      {
+        name: "nestjs",
+        backgroundColor: "bg-[#E0234E]",
+      },
+      {
+        name: "socketIO",
+        backgroundColor: "bg-[#fff] text-black",
+      },
       {
         name: "Typescript",
         backgroundColor: "bg-[#3178C6]",
@@ -244,21 +253,24 @@ const projects: ProjectsParams[] = [
         backgroundColor: "bg-black",
       },
       {
-        name: "Pusher",
-        backgroundColor: "bg-[#7D6CAD]",
+        name: "microservices",
+        backgroundColor: "bg-[#B68740]",
       },
       {
         name: "Mongodb",
         backgroundColor: "bg-[#258E64]",
       },
       {
-        name: "tailwind",
-        backgroundColor: "bg-[#3ebfbb]",
+        name: "rabbitMQ",
+        backgroundColor: "bg-[#FF6600]",
+      },
+      {
+        name: "docker",
+        backgroundColor: "bg-[#1D63ED]",
       },
     ],
-    image: halo,
-    source_code_link: "https://github.com/Moemen12/Chat-app",
-    live: "https://saadeh-chat.vercel.app",
+    image: youapp,
+    source_code_link: "https://github.com/Moemen12/YOUAPP_FULLSTACK_PROJECT",
   },
   {
     name: "Place Discovery",
@@ -293,6 +305,36 @@ const projects: ProjectsParams[] = [
     image: wanderwise,
     source_code_link: "https://github.com/Moemen12/Place_discovery_app",
     live: "http://frontend.wanderwise.wanderwise.space",
+  },
+  {
+    name: "Halo Chat",
+    description:
+      "A chat app supports both individual and group chats, allowing users to send messages, update group information, and manage group members and photos. It includes features like message history, profile images, and user authentication",
+    tags: [
+      {
+        name: "Typescript",
+        backgroundColor: "bg-[#3178C6]",
+      },
+      {
+        name: "nextjs",
+        backgroundColor: "bg-black",
+      },
+      {
+        name: "Pusher",
+        backgroundColor: "bg-[#7D6CAD]",
+      },
+      {
+        name: "Mongodb",
+        backgroundColor: "bg-[#258E64]",
+      },
+      {
+        name: "tailwind",
+        backgroundColor: "bg-[#3ebfbb]",
+      },
+    ],
+    image: halo,
+    source_code_link: "https://github.com/Moemen12/Chat-app",
+    live: "https://saadeh-chat.vercel.app",
   },
   {
     name: "Imaginify",

@@ -44,18 +44,20 @@ const ProjectCard = ({
                 loading="lazy"
                 src={github}
                 alt="github"
-                className="w-1/2 h-1/2 object-contain"
+                className="w-1/2 h-1/2"
               />
             </div>
           </div>
-          <div className="flex m-1 card-img_hover items-end">
-            <div
-              onClick={() => window.open(live, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <span className="text-xs font-bold">Live</span>
+          {live ? (
+            <div className="flex m-1 card-img_hover items-end">
+              <div
+                onClick={() => window.open(live, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <span className="text-xs font-bold">Live</span>
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </div>
 

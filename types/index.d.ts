@@ -23,7 +23,7 @@ declare type ProjectsParams = {
   }[];
   image: StaticImageData;
   source_code_link: string;
-  live: string;
+  live?: string;
 };
 
 declare type TestimonialParams = {
