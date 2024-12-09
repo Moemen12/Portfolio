@@ -242,7 +242,7 @@ const projects: ProjectsParams[] = [
       },
       {
         name: "socketIO",
-        backgroundColor: "bg-[#fff] text-black",
+        backgroundColor: "bg-[#C0C0C0] text-black",
       },
       {
         name: "Typescript",
