@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import backend from "./backend.png";
+import onlyBackend from "./projects/backend.webp";
 import codendot from "./company/codendot.svg";
 import marka from "./company/marka_press.jpg";
 import gcb from "./company/gcb_gulf_crypto_bank.svg";
@@ -46,6 +46,7 @@ export {
   creator,
   mobile,
   web,
+  onlyBackend,
   github,
   jest,
   menu,

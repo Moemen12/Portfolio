@@ -36,6 +36,7 @@ import {
   jest,
   npm,
   youapp,
+  onlyBackend,
 } from "../public/assets";
 
 export const navLinks = [
@@ -231,6 +232,53 @@ const testimonials: TestimonialParams[] = [
 ];
 
 const projects: ProjectsParams[] = [
+  {
+    name: "Car Rental System",
+    description:
+      "A sophisticated car rental platform built with NestJS, featuring microservices architecture, real-time processing, and advanced security features.",
+    tags: [
+      {
+        name: "nestjs",
+        backgroundColor: "bg-[#E0234E]",
+      },
+
+      {
+        name: "Typescript",
+        backgroundColor: "bg-[#3178C6]",
+      },
+
+      {
+        name: "microservices",
+        backgroundColor: "bg-[#B68740]",
+      },
+      {
+        name: "Mongodb",
+        backgroundColor: "bg-[#258E64]",
+      },
+      {
+        name: "rabbitMQ",
+        backgroundColor: "bg-[#FF6600]",
+      },
+      {
+        name: "Redis",
+        backgroundColor: "bg-[#A81F13]",
+      },
+      {
+        name: "Algolia",
+        backgroundColor: "bg-[#0000FF]",
+      },
+      {
+        name: "Stripe",
+        backgroundColor: "bg-[#9D9AF1]",
+      },
+      {
+        name: "Gmail",
+        backgroundColor: "bg-[#FFFF] !text-black-200",
+      },
+    ],
+    image: onlyBackend,
+    source_code_link: "https://github.com/Moemen12/car-rental-system",
+  },
   {
     name: "You App",
     description:
