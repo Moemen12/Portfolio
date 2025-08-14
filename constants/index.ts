@@ -150,6 +150,23 @@ const technologies: TechnologiesParams[] = [
 ];
 
 const experiences: ExperienceCardParams[] = [
+
+  {
+    title: "Senior Full stack Developer",
+    company_name: "DRV",
+    icon: gcb,
+    iconBg: "#E6DEDD",
+    date: "April 2025 - Present",
+    points: [
+      "Implemented PostHog analytics integration for real estate websites, enabling business owners to track user behavior and gain actionable insights for improved conversion rates.",
+      "Led complete frontend architecture refactoring to Domain-Driven Design (DDD), establishing coding standards that significantly enhanced maintainability and development workflow.",
+      "Optimized codebase utilization of Next.js and TypeScript, unlocking previously untapped benefits and improving overall application performance.",
+      "Developed HubSpot Calendar integration using Vue.js, Laravel, and Inertia, streamlining appointment scheduling processes for clients.",
+      "Built secure document management system with NestJS backend, PostgreSQL database, and AWS S3, enabling business owners to efficiently upload, store, and manage critical documents.",
+      "Architected unified development approach that improved cross-team collaboration and code consistency, reducing technical debt and accelerating feature delivery."
+    ],
+
+  },
   {
     title: "Full stack Developer",
     company_name: "Gulf Crypto Bank",
