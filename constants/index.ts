@@ -156,7 +156,7 @@ const experiences: ExperienceCardParams[] = [
     title: "Senior Full stack Developer",
     company_name: "DRV",
     icon: drv,
-    iconBg: "#E6DEDD",
+    iconBg: "#FFFFFF",
     date: "April 2025 - Present",
     points: [
       "Implemented PostHog analytics integration for real estate websites, enabling business owners to track user behavior and gain actionable insights for improved conversion rates.",
