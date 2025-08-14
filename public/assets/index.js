@@ -40,6 +40,7 @@ import telegram from "./social_media/telegram.png";
 import halo from "./projects/halo-app.png";
 import npm from "./packages/npm.svg";
 import youapp from "./projects/youapp.png";
+import drv from "./company/drv_ninja_logo.jpeg";
 export {
   logo,
   backend,
@@ -55,6 +56,7 @@ export {
   marka,
   gcb,
   weblayer,
+  drv,
   wanderwise,
   comfy,
   evently,

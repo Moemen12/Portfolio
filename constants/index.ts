@@ -36,6 +36,7 @@ import {
   jest,
   npm,
   youapp,
+  drv,
   onlyBackend,
 } from "../public/assets";
 
@@ -154,7 +155,7 @@ const experiences: ExperienceCardParams[] = [
   {
     title: "Senior Full stack Developer",
     company_name: "DRV",
-    icon: gcb,
+    icon: drv,
     iconBg: "#E6DEDD",
     date: "April 2025 - Present",
     points: [
