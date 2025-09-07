@@ -38,6 +38,7 @@ import {
   youapp,
   drv,
   onlyBackend,
+  car
 } from "../public/assets";
 
 export const navLinks = [
@@ -372,6 +373,33 @@ const projects: ProjectsParams[] = [
     source_code_link: "https://github.com/Moemen12/Place_discovery_app",
     live: "http://frontend.wanderwise.wanderwise.space",
   },
+  {
+    name: "Auto Parts Pro",
+    description:
+      "A complete platform for managing auto parts with search by brand, advanced filtering, and customizable views. Includes a dashboard to add, edit, and manage parts with pagination, Excel import/export, daily sales and debts tracking, plus secure authentication.",
+    tags: [
+      {
+        name: "nextjs",
+        backgroundColor: "bg-black",
+      },
+      {
+        name: "tailwind",
+        backgroundColor: "bg-[#3ebfbb]",
+      },
+      {
+        name: "postgres",
+        backgroundColor: "bg-[#4F46E5]",
+      },
+      {
+        name: "Typescript",
+        backgroundColor: "bg-[#3178C6]",
+      },
+    ],
+    image: car,
+    live: "https://saadeh-dashboard.vercel.app",
+  },
+
+
   {
     name: "Halo Chat",
     description:

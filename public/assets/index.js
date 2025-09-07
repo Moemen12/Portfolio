@@ -7,6 +7,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import backend from "./backend.png";
 import onlyBackend from "./projects/backend.webp";
+import car from "./projects/car.png"
 import codendot from "./company/codendot.svg";
 import marka from "./company/marka_press.jpg";
 import gcb from "./company/gcb_gulf_crypto_bank.svg";
@@ -48,6 +49,7 @@ export {
   mobile,
   web,
   onlyBackend,
+  car,
   github,
   jest,
   menu,

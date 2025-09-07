@@ -22,7 +22,7 @@ declare type ProjectsParams = {
     backgroundColor: string;
   }[];
   image: StaticImageData;
-  source_code_link: string;
+  source_code_link?: string;
   live?: string;
 };
 
