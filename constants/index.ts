@@ -545,6 +545,20 @@ const packages: PackagesParams[] = [
     github_url: "https://github.com/Moemen12/speech-command-engine",
     npm_url: "https://www.npmjs.com/package/speech-command-engine",
   },
+  {
+    name: "@saadeh/ext-sync",
+    image: npm,
+    version: "1.1.1",
+    github_url: "https://github.com/Moemen12/ext-sync",
+    npm_url: "https://www.npmjs.com/package/@saadeh/ext-sync",
+  },
+    {
+    name: "@saadeh/xlsx",
+    image: npm,
+    version: "0.20.3",
+    github_url: "https://github.com/SheetJS/sheetjs",
+    npm_url: "https://www.npmjs.com/package/@saadeh/xlsx",
+  },
 ];
 
 export {
