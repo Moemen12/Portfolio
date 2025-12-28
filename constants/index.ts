@@ -38,7 +38,8 @@ import {
   youapp,
   drv,
   onlyBackend,
-  car
+  car,
+  nextwork
 } from "../public/assets";
 
 export const navLinks = [
@@ -152,7 +153,21 @@ const technologies: TechnologiesParams[] = [
 ];
 
 const experiences: ExperienceCardParams[] = [
+ {
+    title: "Community Lead",
+    company_name: "NextWork (Global EdTech Platform)",
+    icon: nextwork,
+    iconBg: "#FFFFFF",
+    date: "Nov 2025 - Present",
+    points: [
+      "Led and grew the NextWork community in Lebanon",
+      "Supported learners in hands-on cloud & tech projects (AWS, DevOps, etc.)",
+      "Organized / coordinated learning initiatives and community activities",
+      "Acted as local point of contact between NextWork and regional learners",
+      "Promoted project-based learning and career-ready skills",
+    ],
 
+  },
   {
     title: "Senior Full stack Developer",
     company_name: "DRV",
