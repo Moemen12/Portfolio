@@ -17,13 +17,13 @@ const Package: React.FC = (): React.JSX.Element => {
         <p className={`${styles.sectionSubText}`}>Discover my creations</p>
         <h2 className={`${styles.sectionHeadText}`}>Packages. 📦</h2>
       </motion.div>
-      <div className="flex items-center gap-4 mt-12">
+      <div className="flex flex-wrap justify-center items-center gap-4 mt-12">
         {packages.map((pkg: PackagesParams) => {
           return (
             <motion.div
               key={pkg.name}
               variants={fadeIn("right", "spring", 0.5, 0.75)}
-              className="green-pink-gradient p-[1px] rounded-[20px] shadow-card xs:w-[250px] w-full h-[200px] cursor-pointer"
+              className="green-pink-gradient p-[1px] rounded-[20px] shadow-card w-full xs:w-[250px] h-[200px] cursor-pointer"
             >
               <ReactFlipCard
                 frontComponent={<FrontPackageCard pkg={pkg} />}
